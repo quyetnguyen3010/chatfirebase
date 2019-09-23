@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "828335589251",
+    "firebase_url": "https://chatquyet-8c187.firebaseio.com",
+    "project_id": "chatquyet-8c187",
+    "storage_bucket": "chatquyet-8c187.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828335589251:android:fa761f892eaa5e11",
+        "android_client_info": {
+          "package_name": "com.triet.quyetchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828335589251-jhu4pkc127472sl7idtplkj6k1k125k5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.triet.quyetchat",
+            "certificate_hash": "0eecba0dbdd3626e17db3dc2e570794880b40af6"
+          }
+        },
+        {
+          "client_id": "828335589251-nrvmrsnf529c9joltef0ekt238c4oaar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDDc2kOFLXZ-Ht4kV36vYh5wp7uOB3Csk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828335589251-nrvmrsnf529c9joltef0ekt238c4oaar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:layout_margin="2dp">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/image_sing"
+    android:layout_width="@dimen/size_70dp"
+    android:layout_height="@dimen/size_70dp"
+    android:layout_margin="@dimen/size_5"
+   android:src="@drawable/girl1"/>
+        <TextView
+            android:layout_toRightOf="@id/image_sing"
+            android:id="@+id/sing_displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display name"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:textSize="@dimen/size_18sp"/>
+
+            <ImageView
+                android:layout_marginTop="@dimen/size_15dp"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:id="@+id/image_online"
+                android:layout_width="@dimen/size_15dp"
+                android:layout_height="@dimen/size_15dp"
+                android:src="@drawable/ic_online"
+                android:layout_toRightOf="@id/sing_displayName"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/image_offline"
+                android:layout_width="@dimen/size_15dp"
+                android:layout_height="@dimen/size_15dp"
+                android:src="@drawable/ic_offline"
+                android:layout_toRightOf="@id/sing_displayName"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:visibility="invisible"
+                />
+
+
+    <TextView
+        android:id="@+id/single_status"
+        android:layout_below="@id/sing_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Users default Status"
+        android:layout_toRightOf="@id/image_sing"
+       android:layout_marginTop="@dimen/size_8"
+        android:layout_marginStart="@dimen/size_10dp"
+        android:textSize="@dimen/size_14sp"
+        android:textStyle="italic"/>
+
+
+</RelativeLayout>

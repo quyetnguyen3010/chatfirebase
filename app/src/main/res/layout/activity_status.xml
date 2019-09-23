@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/status_bar">
+
+    </include>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_bar"
+        android:layout_marginTop="@dimen/size_50dp">
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:hint="What are you thinking!"
+
+           />
+        <Button
+            android:id="@+id/btn_Editstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:layout_marginStart="@dimen/size_40dp"
+            android:layout_marginEnd="@dimen/size_40dp"
+            android:layout_marginTop="@dimen/size_30"
+            android:background="@drawable/custom_button"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

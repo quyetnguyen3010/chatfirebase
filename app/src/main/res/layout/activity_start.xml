@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_bgstart"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".main.StartActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/size_100dp"
+            android:id="@+id/ll_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcom to Quyet Chat App"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/size_25sp"
+                android:textStyle="italic"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/size_30"
+                android:layout_height="@dimen/size_35dp"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:src="@drawable/ic_tim" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_100dp"
+                android:layout_marginStart="@dimen/size_30"
+                android:layout_marginEnd="@dimen/size_30"
+                android:textStyle="bold"
+                android:textColor="@color/color_blue"
+                android:text="login"
+                android:textSize="@dimen/size_16sp"
+                android:background="@drawable/custom_button"
+                />
+            <Button
+                android:id="@+id/btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginStart="@dimen/size_30"
+                android:layout_marginEnd="@dimen/size_30"
+                android:textStyle="bold"
+                android:textColor="@color/color_blue"
+                android:text="create account"
+                android:textSize="@dimen/size_16sp"
+                android:background="@drawable/custom_button"
+                />
+        </LinearLayout>
+<com.jetradarmobile.snowfall.SnowfallView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:snowflakesNum="250"
+    app:snowflakeAlphaMin="150"
+    app:snowflakeAlphaMax="255"
+    app:snowflakeAngleMax="5"
+    app:snowflakeSizeMin="8dp"
+    app:snowflakeSizeMax="32dp"
+    app:snowflakeSpeedMin="4"
+    app:snowflakeSpeedMax="12"
+    app:snowflakesFadingEnabled="true"
+    app:snowflakesAlreadyFalling="false"
+    app:snowflakeImage="@drawable/ic_snow"/>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

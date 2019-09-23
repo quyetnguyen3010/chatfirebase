@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ChatsActivity"
+    android:background="#F0ECEC">
+
+    <include
+        android:id="@+id/chat_appBar"
+        layout="@layout/app_bar_layout"></include>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_appBar"
+        android:layout_marginBottom="@dimen/size_70dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+    android:layout_margin="@dimen/size_1dp"
+    android:id="@+id/send"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/color_White"
+    android:padding="@dimen/size_5">
+        <ImageButton
+            android:id="@+id/chat_add_btn"
+            android:background="#FFFFFF"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:src="@drawable/ic_photo">
+
+        </ImageButton>
+    <EditText
+        android:id="@+id/edt_EnterMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/chat_add_btn"
+        android:layout_toLeftOf="@+id/btn_image_send"
+        android:background="@drawable/custom_edt_message"
+        android:hint="Type a Message..."
+        android:padding="@dimen/size_5"
+        android:textSize="@dimen/size_16sp">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/btn_image_send"
+        android:layout_width="@dimen/size_30"
+        android:layout_height="@dimen/size_30"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_send_black_24dp">
+    </ImageButton>
+
+</RelativeLayout>
+
+</RelativeLayout>

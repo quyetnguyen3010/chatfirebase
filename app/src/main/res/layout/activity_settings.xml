@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity"
+    android:background="@drawable/custom_bgstart">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/setting_appBar"></include>
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_below="@id/setting_appBar"
+    android:id="@+id/ccimage_setting"
+    android:layout_width="@dimen/size_200dp"
+    android:layout_height="@dimen/size_200dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/size_20dp"
+    android:src="@drawable/girl1"/>
+    <TextView
+        android:id="@+id/txt_settingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Display Name"
+        android:layout_below="@id/ccimage_setting"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:textStyle="bold"
+        android:textColor="#F3E5F5"
+        android:textSize="@dimen/size_20sp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txt_settingstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hi there! I'm using Quyet Chat App"
+        android:layout_below="@id/txt_settingName"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:textStyle="italic"
+        android:textColor="#F3E5F5"
+        android:textSize="@dimen/size_16sp">
+
+    </TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_settingstatus"
+        android:id="@+id/btn_settingchannelImage"
+        android:layout_marginTop="@dimen/size_70dp"
+        android:text="Channel Image"
+        android:textSize="@dimen/size_16sp"
+        android:textColor="@color/color_blue"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/size_30"
+        android:layout_marginEnd="@dimen/size_30"
+        android:background="@drawable/custom_button"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_settingchannelImage"
+        android:id="@+id/btn_settingchannelStatus"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:text="Channel Status"
+        android:textSize="@dimen/size_16sp"
+        android:textColor="@color/color_blue"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/size_30"
+        android:layout_marginEnd="@dimen/size_30"
+        android:background="@drawable/custom_button"/>
+
+
+</RelativeLayout>
